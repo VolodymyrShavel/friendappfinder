@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Cards from './components/Cards';
+import {useState} from 'react';
+import {getGames} from './components/games';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   let games = getGames();
+
+   const [cards, setCards] = useState(games.filter((game) => game));
+
+   return (
+      <div className="App">
+         <Header />
+         <Cards cards={cards} />
+      </div>
+   );
 }
 
 export default App;
