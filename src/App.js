@@ -12,6 +12,7 @@ function App() {
    return (
       <div className="App">
          <Header />
+         <h1>Hello from friends!</h1>
          <Cards cards={cards} />
       </div>
    );

@@ -8,7 +8,6 @@ ReactDOM.render(
    <BrowserRouter basename={window.location.pathname || ''}>
       <Routes>
          <Route path="/" element={<App />} />
-         <h1>Hello from friends!</h1>
       </Routes>
    </BrowserRouter>,
    document.getElementById('root')
