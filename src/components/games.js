@@ -193,7 +193,7 @@ let games = [
    },
    {
       image: "Logo Playerunknown's Battlegrounds",
-      name: "Playerunknown's Battlegrounds",
+      name: "Player Unknown's Battle grounds",
       tag: 'Онлайн',
       uri: 'PuBg',
    },

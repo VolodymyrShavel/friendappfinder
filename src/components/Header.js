@@ -1,12 +1,17 @@
 import icon from './gg1.png';
+import React from 'react';
+import {Link, Outlet} from 'react-router-dom';
 
-function Header() {
+const Header = () => {
    return (
       <div className="header_body">
-         <img src={icon} className="icon_logo" alt="" />
-         <h1>Найди себе партнёра</h1>
+         <Link to="/">
+            <img src={icon} className="icon_logo" alt="" />
+         </Link>
+         <h1>Найди себе команду</h1>
+         <Outlet />
       </div>
    );
-}
+};
 
 export default Header;
